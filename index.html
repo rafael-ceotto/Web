@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta name="keywords" content="Zelda, Final, Project, Web, Development, Sinclair">
+	<meta name="author" content="Rafael Ceotto">
+	<title>Rafael Ceotto | Final Project</title>
+	<link href="css/reset.css" rel="stylesheet" media="all" />
+	<link href="css/home.css" rel="stylesheet" media="screen" />
+	<link href="css/print.css" rel="stylesheet" media="print" />
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<header class="zeldaHeader">
+        <div id="topBar">
+            <p><a href="" id="text_topBar">Check out the news about Zelda</a></p>
+		</div>
+		<div class="date">
+			<h2 id="timeHeading">Current Time</h2>
+			<div id="dateNow">4/30/2019<br>2:02:03 PM</div>
+		</div>
+		
+
+		
+        <div class="container v-middle">
+            <h1 class="logoDesk">
+                <a href="index.html"><img src="images/zelda-logo.png" alt="Zelda Logo"></a>
+            </h1>
+            <nav class="deskMenu">
+                
+                <div class="collapsable">
+                    <a href="chronology.html">Chronology</a>
+                    <a href="best-games.html">Best Games</a>
+                    <a href="contact.html">Contact Us</a>
+				</div>
+				
+			</nav>
+			<nav id="mobileMenu">
+				<nav id="nav_nav-mobile" role="navigation">
+					<div id="menuToggle">
+					  
+					  <input type="checkbox" />
+					  <span></span>
+					  <span></span>
+					  <span></span>					  		  
+					  <ul id="menu">
+						<a href="index.html"><li>Home</li></a>
+						<a href="chronology.html"><li>Chronology</li></a>
+						<a href="best-games.html"><li>Best Games</li></a>
+						<a href="contact.html"><li>Contact Us</li></a>
+						 </ul>
+					</div>
+				</nav>
+			</nav>
+        </div>
+	</header>
+	
+	<section id="introTxt">
+		<div class="container">
+			<div class="row">
+				<h1>The Legend of Zelda Series</h1>
+				<h3>Right into your life from here to now.</h3>
+			</div>
+		</div>
+	</section>	
+
+	<aside>
+		<div id="div1">
+			<h1>Videos</h1>
+			<iframe class="lastVideo" width="200" height="auto" src="https://www.youtube.com/embed/zw47_q9wbBE"
+				frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+				allowfullscreen></iframe>
+			<p>Check out the last game trailer released </p>
+		</div>
+
+		<div id="div2">
+			<h1>Chronology</h1>
+			<img src="images/hyrule-time.jpg" alt="Hyrule Crest">
+			<p>Discover the history and see if you can find all the Hyrule pieces </p>
+		</div>
+
+		<div id="div3">
+			<h1>Best Items</h1>
+			<img src="images/best_equips.png" alt="Best Items">
+			<p>Any trouble? Find the best items here! </p>
+		</div>
+
+		<div id="div4">
+			<h1>Walkthrough</h1>
+			<img src="images/controller-walk.png" alt="Hyrule Crest">
+			<p>Find everything that you need here. </p>
+		</div>
+
+	</aside>
+
+	<!-- <div class="betweenSection2"></div> -->
+
+	<section class="templeofTime">
+		<h2>Mythologies of the Legend</h2>
+		<div class="container">
+			<div class="row">
+				<div class="image-myth">
+					<img src="images/myth_zelda-1.png" alt="Mythologies Zelda">
+				</div>
+
+				<div class="text-myth">
+					<h3>The Three Golden Goddesses</h3>
+					<p>
+						Before time began, there existed three Golden Goddesses who descended upon chaos to create
+						Hyrule.<br />
+						Din created the land, Nayru blessed it with the law, and Farore filled it with life. When they
+						departed,<br />
+						they left behind at the point where they left the world a fragment of their power in the Sacred
+						Relic known<br />
+						as the Triforce, and the place where it came to rest became known as the Sacred Realm.
+					</p>
+					<h3 class="sacred_paragraph">The Triforce and the Sacred Realm</h3>
+					<p>
+						The Triforce is a sacred golden relic left within the sacred ground by the Golden goddesses, Din
+						(power),<br />
+						Nayru (wisdom), and Farore (courage) after their completion of the creation of the land of
+						Hyrule.<br />
+						The Triforce was formed at the exact point at which the goddesses left the physical world. The
+						piece on top<br />
+						is the Triforce of Power, the left is the Triforce of Wisdom and the right piece is the Triforce
+						of Courage.<br />
+						Whomever touches the Triforce will be granted one wish, regardless of their intentions.<br />
+
+						The area around the Triforce became the Sacred Realm. The Sacred Realm is an exact parallel to
+						Hyrule.<br />
+						The Temple of Light sits at the center of the realm. Should someone with evil intentions touch
+						the Triforce, <br />
+						it would split and the Hero of Time would appear to defeat him.
+					</p>
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+
+	<footer>
+		<nav class="footer_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="chronology.html">Chronology</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="best-games.html">Best Games</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><p id="actualYear"></p></li>
+				
+				
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

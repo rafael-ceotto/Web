@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+	<title>Rafael Ceotto | Final Project</title>
+	<link href="css/reset.css" rel="stylesheet" media="all" />
+	<link href="css/home.css" rel="stylesheet" media="screen" />
+	<link href="css/print.css" rel="stylesheet" media="print" />
+	<link href="css/media.css" rel="stylesheet" />
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<header class="zeldaHeader">
+        <div id="topBar">
+            <p><a href="" id="text_topBar">Check out the news about Zelda</a></p>
+		</div>
+		<div class="date">
+			<h2 id="timeHeading">Current Time</h2>
+			<div id="dateNow">4/30/2019<br>2:02:03 PM</div>
+		</div>
+		
+
+		
+        <div class="container v-middle">
+            <h1 class="logoDesk">
+                <a href="index.html"><img src="images/zelda-logo.png" alt="Zelda Logo"></a>
+            </h1>
+            <nav class="deskMenu">
+                
+                <div class="collapsable">
+                    <a href="chronology.html">Chronology</a>
+                    <a href="best-games.html">Best Games</a>
+                    <a href="contact.html">Contact Us</a>
+				</div>
+				
+			</nav>
+			<nav id="mobileMenu">
+				<nav id="nav_nav-mobile" role="navigation">
+					<div id="menuToggle">
+					  
+					  <input type="checkbox" />
+					  <span></span>
+					  <span></span>
+					  <span></span>					  		  
+					  <ul id="menu">
+						<a href="index.html"><li>Home</li></a>
+						<a href="chronology.html"><li>Chronology</li></a>
+						<a href="best-games.html"><li>Best Games</li></a>
+						<a href="contact.html"><li>Contact Us</li></a>
+						 </ul>
+					</div>
+				</nav>
+			</nav>
+        </div>
+	</header>
+    
+    <section id="introTxt">
+		<div class="container">
+			<div class="row">
+				<h1>Contact Us!</h1>
+				<h3>Fill the form and we'll return</h3>
+			</div>
+		</div>
+	</section>
+
+    <div class="followPath">
+            <ul class="breadcrumbs">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+    </div>
+
+
+	<section>
+        <div class="container contact">
+            <article>
+               <h1>Keep in touch with us!</h1>
+               <h2>Wanna know more about Zelda games? Fill the form here and we'll update you with every news about it.
+                   You can also go to The Legend of Zelda official site by clicking on the image below.
+                </h2>
+                <a href="https://www.zelda.com"><img src="images/link-link.png" alt="Official Link"></a>
+                <p>As an opinion, The Legend of Zelda series has become more than a game.<br /> It's a culture that includes people happiness
+                    and the desire of Free Will.<br /> The game has also broken the "4th Wall" and can interact with the player,<br /> which means that 
+                    the player is the one who make choices on how to do things.
+                </p>
+            </article>                    
+            <div class="zeldaForm">
+                    
+                <form action="http://www.example-rafa.com" method="POST">
+                    <fieldset>
+                        <div class="textbox">
+                            <label for="nameBox">First Name:</label>
+                            <input type="text" id="nameBox" name="fName" required placeholder="First Name">
+                        </div>
+                        <div class="textbox">
+                            <label for="lastnameBox">Last Name:</label>
+                            <input type="text" id="lastnameBox" name="lName" required placeholder="Last Name">
+                        </div>
+                        <div class="textbox">
+                            <label for="countryBox">Country:</label>
+                            <input type="text" id="countryBox" name="Country" placeholder="Country">
+                        </div>
+                        <div class="textbox">
+                            <label for="mailBox">E-mail:</label>
+                            <input type="text" id="mailBox" name="mail" required placeholder="example@example.com">
+                        </div>
+                        <div class="textbox">
+                            <label for="numberBox">Phone:</label>
+                            <input type="text" id="phoneBox" name="phone" placeholder="Phone number">
+                        </div>
+                        
+                        
+                        <div class="consoleSelected">
+                                <label for="platform">Platform:</label>
+                                <input type="checkbox" name="console" value="Super Nintendo">Super Nintendo
+                                <input type="checkbox" name="console" value="Game Boy">Game Boy
+                                <input type="checkbox" name="console" value="Nintendo 64">Nintendo 64
+                                <input type="checkbox" name="console" value="Game Cube">Game Cube
+                                <input type="checkbox" name="console" value="3DS">3DS
+                                <input type="checkbox" name="console" value="Wii">Wii
+                                <input type="checkbox" name="console" value="Wii U">Wii U
+                                <input type="checkbox" name="console" value="Switch">Switch
+                        </div>
+                        
+                        <div id="relatedGames">
+                                <label for="bestGame">Favorite Game:</label>
+                                <select name="game" id="bestGame">
+                                            <option value="The Legend of Zelda">The Legend of Zelda</option>
+                                            <option value="Adventure of Link">Adventure of Link</option>
+                                            <option value="A Link to the Past">A Link to the Past</option>
+                                            <option value="Link's Awakening">Link's Awakening</option>
+                                            <option value="Oracle of Ages">Oracle of Ages</option>
+                                            <option value="Oracle of Seasons">Oracle of Seasons</option>
+                                            <option value="Ocarina of Time">Ocarina of Time</option>
+                                            <option value="Majora's Mask">Majora's Mask</option>
+                                            <option value="The Minish Cap">The Minish Cap</option>
+                                            <option value="The Wind Waker">The Wind Waker</option>
+                                            <option value="Twilight Princess">Twilight Princess</option>
+                                            <option value="Phantom Hourglass">Phantom Hourglass</option>
+                                            <option value="Spirit Tracks">Spirit Tracks</option>
+                                            <option value="Four Swords">Four Swords</option>
+                                            <option value="A Link Between Worlds">A Link Between Worlds</option>
+                                            <option value="Skyward Sword">Skyward Sword</option>
+                                            <option value="Breath of the Wild">Breath of the Wild</option>
+                                </select><br/>
+                        </div>
+
+                        <div id="brandChoice">
+                            <label for="onlyPlatform">Only Nintendo matters ?</label>
+                            <input type="radio" name="choice" id="chooseYes" value="yes">Yes
+                            <input type="radio" name="choice" id="chooseNo" value="no">No
+                         </div>
+                        
+                        <div id="subjectOpinion">
+                           <label for="subjectZelda">Give us your opinion</label>
+                           <textarea name="subjectZelda" id="form_textArea" placeholder="Type here your experience with zelda"></textarea>
+                        </div>
+                        
+                           
+                        <div class="formBtn">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Reset</button>
+                        </div>
+                        
+                    </fieldset>
+
+                </form>
+            </div>
+        </div>
+    </section>
+	
+	
+
+	<footer>
+		<nav class="footer_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="chronology.html">Chronology</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="best-games.html">Best Games</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li><p id="actualYear"></p></li>
+				
+				
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>

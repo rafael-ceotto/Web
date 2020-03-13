@@ -1,0 +1,1242 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: "AmericanUncD";
+  src: url("/fonts/AmericanUncDRegular.eot"); /* IE9 Compat Modes */
+  src: url("/fonts/AmericanUncDRegular.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("/fonts/AmericanUncDRegular.otf") format("opentype"), /* Open Type Font */
+    url("/fonts/AmericanUncDRegular.svg") format("svg"), /* Legacy iOS */
+    url("/fonts/AmericanUncDRegular.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("/fonts/AmericanUncDRegular.woff") format("woff"), /* Modern Browsers */
+    url("/fonts/AmericanUncDRegular.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*
+   
+   Final Project Rafael Ceotto
+   
+   Filename: home.css
+
+*/
+
+
+body{
+  overflow-x: hidden;
+  
+  
+}
+
+/*Script Box*/
+
+.date{
+  float: right;
+    border: 1px solid #000;
+    margin-right: 15px;
+    padding: 10px;
+    position: relative;
+    top: 20px;
+}
+
+/*Division Bar*/
+
+body header hr{
+	width: 100%;
+  position: relative;
+  bottom: 70px;
+}
+
+body header{
+  display:inline-block;
+  width:100%;
+  min-height:100px;
+}
+
+/* Logodesk */
+.logoDesk{
+  display: inline-block;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+
+.logoDesk img{
+  max-width: 250px;
+    margin: 0 auto 10px;
+    text-align: center;
+    width: 100%;
+    padding-top: 15px;
+}
+
+/*Top Bar*/
+
+body header #topBar{
+	background-color: #030062;
+    height: 30px;
+}
+
+body header #topBar #text_topBar{
+    color: #fff;
+    /* background-color: #ca010c; */
+    font-size: 18px;
+    padding-top: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    /* display: block; */
+    position: relative;
+    left: 0px;
+    top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.v-middle{
+  display:inline-block;
+  vertical-align: middle;
+  width:69%;
+}
+.container{
+  width:100%;
+  padding:0 15px;
+}
+
+.deskMenu{
+	padding:0px;
+  margin:0px;
+  list-style:none;
+}
+
+.deskMenu{
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  bottom: 0px;
+  right: 0;
+}
+.deskMenu button{
+  display:none;
+}
+.deskMenu a{
+	color: black;
+    text-decoration: none;
+    font-family: "AmericanUncD";
+    font-size: 23px;
+    /* border: 2px solid #000; */
+    padding: 10px;
+    display: inline-block;
+    margin-left: 25px
+}
+
+.deskMenu a:hover{
+	background-color:#ca010c;
+  color: white;
+}
+
+/*Main Section*/
+
+/* .main .row{
+    position: relative;
+    bottom: 75px;
+} */
+
+.main .carouselPics{
+    width: 250px;
+    height: 400px;
+}
+
+.main .dot{
+    position: relative;
+    bottom: 45px;
+}
+
+/*Aside*/
+
+aside{
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    border: 2px outset #000;
+    padding: 20px 30px;
+    text-align:center;
+
+    
+}
+
+aside div{
+    background-color: #000;
+    color: white;
+    display: block;
+    width: 70%;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+/* aside #div1{
+}
+aside #div1,
+aside #div2,
+aside #div3,
+aside #div4{
+  width: 70%;
+  border-radius: 20px;
+} */
+
+aside #div2 img,
+aside #div3 img,
+aside #div4 img{
+  width: 200px;
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+}
+
+aside #div2 p,
+aside #div3 p,
+aside #div4 p{
+  text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+
+aside #div1:hover,
+aside #div2:hover,
+aside #div3:hover,
+aside #div4:hover{
+	box-shadow: 5px 5px 10px #000;
+}
+
+aside #div1 p{
+    text-align: center;
+}
+
+aside #div1 .lastVideo{
+	display: block;
+    margin: 0 auto;
+}
+
+aside #div1 h1,
+aside #div2 h1,
+aside #div3 h1,
+aside #div4 h1 {
+	text-align: center;
+  font-size: 17px;
+  color: green;
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+
+/*Carousel from Scratch*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1920px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Images Size */
+
+.imageSlider{
+    width: 100%;
+    height: 500px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover*/
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* Breadcrumbs */
+
+ul.breadcrumbs {
+  padding: 20px 13px;
+  list-style: none;
+  
+}
+
+ul.breadcrumbs li {
+  display: inline;
+  font-size: 18px;
+}
+
+ul.breadcrumbs li+li:before {
+  padding: 8px;
+  color: #0a230a;
+  content: "/\00a0";
+}
+
+
+ul.breadcrumbs li a{
+  text-decoration: none;
+    color: #0a230a;
+    margin: 0 3px;
+}
+
+
+
+
+/* Section Temple of Time */
+
+.templeofTime{
+  background: url('../images/bg_temple.jpg');
+  background-size: cover;
+  background-position-y: 50%;
+  display: grid;
+  grid-column: 50% 50%;
+  
+}
+
+.templeofTime h2{
+  margin: 0 auto;
+  display: block;
+  color: white;
+  font-size: 20px;
+  position: relative;
+  top: 50px;
+  right: 0;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.templeofTime h2:hover{
+  font-family: "AmericanUncD";
+  background-color: #0a230a;
+}
+
+.templeofTime .image-myth{
+  float: left;
+}
+
+.templeofTime .text-myth{
+  float: right;
+  margin-top: 107px;
+  padding: 50px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.8);
+}
+
+.templeofTime .text-myth h3{
+  padding-bottom: 15px;
+  font-size: 23px;
+  text-align: center;
+}
+
+.templeofTime .text-myth h3.sacred_paragraph{
+  padding-top: 15px;
+}
+
+/* Footer */
+
+footer{
+  background-color:#030062;
+  display: inline-block;
+  width: 100%;
+  padding: 10px 0;
+}
+
+footer .footer_menu ul li{
+  display: inline-block;
+    
+}
+
+footer .footer_menu ul li a,
+footer .footer_menu ul li p{
+  color: #fff;
+  font-size: 20px;
+  padding: 0;
+}
+
+footer .footer_menu ul li:last-child{
+  float: right;
+  padding: 0;
+  margin-right: 5px;
+}
+
+
+
+footer .separator_footer{
+  color: white;
+  position: relative;
+  bottom: 1px;
+}
+
+/* BEST GAMES  */
+
+.mainContent.bestGames{
+  background: url(../images/bg_bestgames.png) center center no-repeat;
+    background-size: auto;
+    
+}
+
+table{
+  margin: 0 auto 10px;
+  border-collapse: collapse;
+  width: 70%;
+}
+
+table > thead > tr > .rowYears{
+  background-color: #030062;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+}
+
+table #bestTitles{
+  background-color: #fac203;
+  color: black;
+}
+
+table #strippedLines{
+  background-color: green;
+}
+
+table .footTable{
+  text-align: center;
+}
+
+table .mixtitleYear{
+  text-align: center;
+}
+
+table .mixtitleYear img{
+  height: 10%;
+    padding: 5px;
+    background-size: cover;
+    position: relative;
+    top: 2px;
+}
+
+table .mixtitleYear img:hover{
+  background-color: #030062;
+  height: 10%;
+    padding: 5px;
+}
+
+
+.zeldaTable1 caption,
+.zeldaTable1 tfoot{
+  background-color: #0a230a;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+.zeldaTable1 tfoot td{
+  padding: 10px;
+}
+
+/* CONTACT US */
+
+.mainContent{
+  background: url(../images/bg_contact.png) center center no-repeat;
+    background-size: auto;
+    height: 400px;
+}
+
+.mainContent .container {
+  width:100%;
+  padding:0 15px;
+}
+
+.container.contact{
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 20px;
+}
+
+.container.contact h1{
+  text-align: center;
+}
+
+.container.container.contact h2,
+.container.container.contact p{
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.container.contact p{
+  text-align: center;
+  line-height: 35px;
+}
+
+.container.contact img{
+  margin: 0 auto;
+    display: block;
+}
+
+article{
+  border: 2px solid grey;
+  padding-top: 30px;
+}
+
+/* FORM */
+
+fieldset{
+  padding-top: 30px;
+}
+
+fieldset #relatedGames{
+  float: right;
+  
+}
+
+fieldset #relatedGames select{
+  outline: none;
+    border: none;
+    border-left: green solid;
+    border-bottom: green solid;
+    border-right: green solid;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.zeldaForm button{
+  font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    font-family: CURSIVE;
+    background-color: green;
+    color: white;
+    border-radius: 25px;
+    border: 2px solid white;
+    margin: 0 auto;
+    text-align: center;
+    display: inline;
+}
+
+.zeldaForm input{
+  outline: none;
+  border: none;
+  border-left: green solid;
+  border-bottom: green solid;
+  border-right: green solid;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.zeldaForm input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: black;
+}
+.zeldaForm input::-moz-placeholder { /* Firefox 19+ */
+  color: black;
+}
+.zeldaForm input:-ms-input-placeholder { /* IE 10+ */
+  color: black;
+}
+.zeldaForm input:-moz-placeholder { /* Firefox 18- */
+  color: black;
+}
+
+/* Input and Labels */
+
+.textbox{
+  margin-top: 20px;
+}
+
+.zeldaForm #nameBox{
+  margin-right: 30px;
+}
+
+.zeldaForm #countryBox{
+  margin-left: 17px;
+  margin-right: 30px;
+}
+
+.zeldaForm #mailBox{
+  margin-left: 27px;
+}
+
+.zeldaForm #phoneBox{
+  margin-left: 29px;
+}
+
+.zeldaForm .consoleSelected{
+  margin-top: 30px;
+}
+
+.zeldaForm #brandChoice{
+  position: relative;
+  top: 30px;
+  font-size: 13px;
+}
+
+.zeldaForm #subjectOpinion{
+  display: inline-block;
+    text-align: center;
+    margin-top: 44px;
+    position: relative;
+    right: 10px;
+}
+
+.zeldaForm #subjectOpinion label{
+  margin: 10px;
+  display: inline-block;
+  text-align: center;
+}
+
+.zeldaForm .formBtn{
+	margin: 10px auto;
+	text-align: center;
+}
+
+
+/* CHRONOLOGY */
+
+#introTxt{
+  text-align: center;
+  font-size: 38px;
+  padding-bottom: 40px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  line-height: 40px;
+  background: url(../images/bg_chrono.png) center center no-repeat;
+  background-size: auto;
+  height: 400px;
+  padding-top: 168px;
+  color: rgb(255,255,255);
+}
+
+.text-myth{
+  background:#FFF;
+}
+
+
+.grid-container{
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: 180px 200px;
+  background-color: #0a230a;
+  padding: 10px;
+  margin-bottom: 20px;
+  display:none;
+  height:200px;
+  overflow:hidden;
+}
+
+.grid-container.active{
+  display:grid;
+  animation: slideIn 1s forwards;
+}
+
+@keyframes slideIn{
+  from {
+    height:0;
+  }
+  to {
+    height:200px;
+  }
+}
+
+
+.grid-container.grid-chronology {
+  grid-template-columns: auto auto auto auto;
+}
+
+.grid-container.grid-chronology-defeat {
+  grid-template-columns: auto auto auto auto auto auto auto auto;
+}
+
+.grid-container.grid-chronology-child,
+.grid-container.grid-chronology-adult {
+  grid-template-columns: auto auto auto ;
+}
+
+.grid-container.grid-chronology-final{
+  grid-template-columns: auto;
+  margin: 0 auto 20px;
+  text-align: center;
+}
+
+.grid-container.grid-chronology > div,
+.grid-container.grid-chronology-defeat > div,
+.grid-container.grid-chronology-child > div,
+.grid-container.grid-chronology-adult > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 10px 0 10px;
+  font-size: 30px;
+}
+
+.grid-container.grid-chronology img{
+  width: 300px;
+  cursor: pointer;
+}
+
+.grid-container.grid-chronology-defeat img{
+  width: 175px;
+  height: 100%;
+  cursor: pointer;
+}
+
+.grid-container.grid-chronology-child img,
+.grid-container.grid-chronology-adult img,
+.grid-container.grid-chronology-final{
+  width: 300px;
+  height: 150px;
+  cursor: pointer;
+}
+
+.introTxtTime{
+  text-align: center;
+  margin: 20px auto; 
+}
+
+.introTxtTime button{
+  font-size: 20px;
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+  
+}
+
+figcaption{
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+#nav_nav-mobile{
+  display: none;
+}
+
+.imageBreath{
+  max-width:320px;
+  height: auto;
+}
+
+.grid-container.grid-chronology-final{
+  width:350px;
+}
+
+
+
+
+@media (max-width: 767px){
+  header{
+    min-height:60px!important;
+    height:60px;
+  }
+
+  header .container{
+    display:inline-block;
+    vertical-align:middle;
+    padding-top:10px;
+  }
+
+  #topBar{
+    display:none;
+  }
+
+  .date{
+    display: none;
+  }
+
+  .logoDesk{
+    display:inline-block;
+    max-width:50%;
+    vertical-align:middle;
+  }
+
+  .deskMenu{
+    width:48%;
+    display:inline-block;
+    vertical-align:middle;
+    text-align:right;
+    
+  }
+
+  .deskMenu button{
+    display:inline-block;
+  }
+
+  .deskMenu button .bar{
+    display:block;
+    width:20px;
+    height:5px;
+    background:#000;
+    margin: 0 0 3px;
+  }
+
+  .logoDesk img{
+    margin: 0;
+    padding-top: 0;
+    width: 170px;
+    position: relative;
+    left: 115px
+  }
+
+  #introTxt{
+    margin-top: 30px;
+  }
+  
+  .mainContent{
+    margin-top: 30px;
+    
+  }
+  
+  .collapsable{
+    display:none;
+  }
+
+  .zeldaHeader{
+    vertical-align: middle;
+  }
+
+  /*Aside*/
+   aside{
+    display: block;
+    border:none;
+   }
+   
+   aside div{
+     width: 100%;
+   }
+   
+   aside #div1{
+     height: 210px;
+   }
+ 
+ aside #div2,
+ aside #div3,
+ aside #div4{
+   margin-top: 10px;
+   height: 210px;
+ }
+  
+  /*Temple of Time Section*/
+  
+  .templeofTime .image-myth img{
+    padding-top: 20px;
+  }
+  
+ .templeofTime .text-myth h3{
+    padding-bottom: 15px;
+    font-size: 19px;
+    text-align: center
+  }
+  
+  .templeofTime h2{
+      position: relative;
+      left: 0;
+  }
+
+  .templeofTime h2:hover{
+      font-family: "AmericanUncD";
+      background-color: #0a230a;
+      font-size: 15px;
+    }
+  
+  .templeofTime img{
+      width: 100%;
+  }
+  
+  .templeofTime h3{
+      font-size: 20px;
+      margin-left: 18px;
+      padding-bottom: 15px;
+      font-family: CURSIVE;
+  }
+
+  .templeofTime .sacred_paragraph{
+      padding-top: 10px;
+      font-size: 17px;
+  }
+
+  .templeofTime p{
+      margin-left: 18px;
+      font-size: 23px;
+      letter-spacing: 1px;
+      line-height: 25px;
+  }
+
+  /*Breadcrumbs*/
+
+  .followPath{
+      margin: 0 auto;
+      text-align: center;
+      
+  }
+
+  /*Best Games*/
+
+  table.zeldaTable1{
+     width: 10%!important;
+  }
+   
+  /*Footer*/
+
+  footer{
+      width: 100%;
+  }
+  
+  .footerBest{
+    width:100%;
+  }
+ 
+  footer .separator_footer{
+    display: none;
+  }
+  
+  footer .footer_menu ul li{
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+    
+  }
+
+  footer .footer_menu ul li p{
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+  }
+  
+  footer .footer_menu ul li:last-child{
+    float: none;
+    padding: 0;
+    margin-right: 5px;
+  }
+
+  .responsive-table{
+    width:100%;
+    overflow:hidden;
+    overflow-x:scroll;
+  }  
+
+  .templeofTime .text-myth{
+    padding: 50px 25px;
+  }
+
+  .templeofTime .text-myth h3{
+    font-size: 16px;
+  }
+
+  .templeofTime .text-myth p{
+    font-size:14px;
+  }
+
+  .templeofTime .text-myth{
+    margin: 0 0 10px;
+  }
+
+  .container.contact{
+    display: block;
+  }
+
+  .zeldaForm{
+    position: relative;
+    right: 2px;
+    width: 100%;
+  }
+
+  .textbox{
+    margin-bottom:15px;
+    padding-bottom:15px;
+  }
+
+  .textbox input{
+    width:215px;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+
+  .zeldaForm #subjectOpinion label{
+    margin: 0;
+  }
+
+  .zeldaForm div#subjectOpinion{
+    margin-top: 40px;
+  } 
+
+  .zeldaForm #phoneBox{
+    margin-top: 10px;
+    position: relative;
+    right: 24px;
+  }
+
+  .zeldaForm #mailBox{
+    margin-left: 4px;
+  }
+
+  .zeldaForm #countryBox{
+    margin-top: 10px;
+    position: relative;
+    right: 17px;
+  }
+
+  .zeldaForm #brandChoice{
+    font-size: 15px;
+  }
+
+  .container.contact img{
+    width: 250px;
+  }
+
+  fieldset #relatedGames{
+    float: right;
+    position: relative;
+    bottom: -10px;
+    right: 0;
+  }
+
+  fieldset #relatedGames select{
+    margin-top: 10px;
+  }
+
+  .zeldaForm .consoleSelected{
+    margin-top:10px;
+  }
+
+  /*Chronology*/
+  .grid-container.active{
+    display:block;
+    height:auto;
+  }
+
+  @keyframes slideIn{
+    from {
+      height:0;
+    }
+    to {
+      height:auto;
+    }
+  }
+
+  .imageBreath{
+    max-width:300px;
+    height: auto;
+  }
+
+  .grid-container.grid-chronology-final{
+    width:320px;
+  }
+
+  /*Foldable Menu*/
+ 
+
+  #menuToggle{
+    display: block;
+    position: relative;
+    top: -50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+  }
+
+  #menuToggle input{
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -7px;
+    left: -5px;    
+    cursor: pointer;
+    opacity: 0; 
+    z-index: 2; 
+    -webkit-touch-callout: none;
+  }
+
+  
+  #menuToggle span{
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;    
+    background: #cdcdcd;
+    border-radius: 3px;    
+    z-index: 1;    
+    transform-origin: 4px 0px;    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+                opacity 0.55s ease;
+  }
+
+  #menuToggle span:first-child{
+    transform-origin: 0% 0%;
+  }
+
+  #menuToggle span:nth-last-child(2){
+    transform-origin: 0% 100%;
+  }
+
+  #menuToggle input:checked ~ span{
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(3){
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+  }
+
+  #menuToggle input:checked ~ span:nth-last-child(2){
+    transform: rotate(-45deg) translate(0, -1px);
+  }
+
+  #menu{
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    background: white;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased; 
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);
+    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+
+  #menu li
+  {
+    padding: 10px 0;
+    font-size: 22px;
+  }
+
+  #menuToggle input:checked ~ ul{
+    transform: none;
+  }
+
+  #menuToggle a{
+    color: green;
+  }
+
+  #nav_nav-mobile{
+    display: block;
+  }
+    
+  }
+
+@media (min-width: 768px) and (max-width: 991px){
+  
+}

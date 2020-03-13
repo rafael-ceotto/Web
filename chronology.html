@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta charset="utf-8">
+	<meta name="keywords" content="Zelda, Final, Project, Web, Development, Sinclair">
+	<meta name="author" content="Rafael Ceotto">
+	<title>Rafael Ceotto | Final Project</title>
+	<link href="css/reset.css" rel="stylesheet" media="all" />
+	<link href="css/home.css" rel="stylesheet" media="screen" />
+	<link href="css/print.css" rel="stylesheet" media="print" />
+	<link href="css/media.css" rel="stylesheet" />
+	<script src="scripts/main.js" defer></script>
+</head>
+
+<body>
+	<header class="zeldaHeader">
+		<div id="topBar">
+			<p><a href="" id="text_topBar">Check out the news about Zelda</a></p>
+		</div>
+		<div class="date">
+			<h2 id="timeHeading">Current Time</h2>
+			<div id="dateNow">4/30/2019<br>2:02:03 PM</div>
+		</div>
+
+
+
+		<div class="container v-middle">
+			<h1 class="logoDesk">
+				<a href="index.html"><img src="images/zelda-logo.png" alt="Zelda Logo"></a>
+			</h1>
+			<nav class="deskMenu">
+
+				<div class="collapsable">
+					<a href="chronology.html">Chronology</a>
+					<a href="best-games.html">Best Games</a>
+					<a href="contact.html">Contact Us</a>
+				</div>
+
+			</nav>
+			<nav id="mobileMenu">
+				<nav id="nav_nav-mobile" role="navigation">
+					<div id="menuToggle">
+						<input type="checkbox" />
+						<span></span>
+						<span></span>
+						<span></span>
+						<ul id="menu">
+							<a href="index.html">
+								<li>Home</li>
+							</a>
+							<a href="chronology.html">
+								<li>Chronology</li>
+							</a>
+							<a href="best-games.html">
+								<li>Best Games</li>
+							</a>
+							<a href="contact.html">
+								<li>Contact Us</li>
+							</a>
+						</ul>
+					</div>
+				</nav>
+			</nav>
+		</div>
+	</header>
+
+	<section id="introTxt">
+		<div class="container">
+			<div class="row">
+				<h1>Hyrule's Hystory :</h1>
+				<h3>The Goddesses, the Hero and the Myth.</h3>
+			</div>
+		</div>
+	</section>
+
+	<div class="followPath">
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="chronology.html">Chronology</a></li>
+		</ul>
+	</div>
+
+	<div class="introTxtTime">
+		<button onclick="displayTimeLine('grid-chronology')">Click here to display the Timeline</button>
+	</div>
+
+	<div id="grid-chronology" class="grid-container grid-chronology">
+		<div>
+			<img src="images/ch-sky.jpg" alt="Skyward Sword: The Beginning of everything" onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-minish.jpg" alt="The Minish Cap: The birth of Four Sword and Vaati introduction."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-four.jpg"
+				alt="Four Swords: Link has to battle Vaati again, but this time. he has three copies of himself."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-ocarina.jpg"
+				alt="Ocarina of Time: Triforce and the Sacred Realm are presented, as well as Gannondorf, the true evil."
+				onclick="modal(this)">
+		</div>
+
+	</div>
+
+	<div class="introTxtTime">
+		<h1>From this point, the timeline splits in 2: The Hero's defeat and the Hero's Triumph</h1>
+	</div>
+
+	<div class="introTxtTime">
+		<button onclick="displayTimeLine('grid-chronology-defeat')">Click here to display the Hero's Defeat
+			Timeline</button>
+	</div>
+
+	<div id="grid-chronology-defeat" class="grid-container grid-chronology-defeat">
+		<div>
+			<img src="images/ch-linkpast.jpg"
+				alt="A Link to the Past: After receiving a message from Zelda, Link must save the princess and face Agahnim and Ganon again."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-awakening.jpg"
+				alt="Link's Awakening: After A Link to the Past, Link suffers an boat accident and only wake up on a distant island and, to go back home, he needs to find the Wind Fish."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-oracle.jpg"
+				alt="Oracle of Ages: Link needs to find the three rencarnations of the godessess as facing the darkness again."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-oracle.jpg"
+				alt="Oracle of Seasons: Link needs to find the three rencarnations of the godessess as facing the darkness again."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-worlds.jpg"
+				alt="A Link Between Worlds: Link learns about the Lorule realm, the opposite o Hyrule, that is only accessible through wall paints."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-triforce.jpg"
+				alt="Tri-Force Heroes: Placed in Hytopia, the only game which you can play with three characters."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-legend.jpg"
+				alt="The Legend of Zelda: Link has to find the eight pieces of Wisdom Triforce, merge them and defeat Gannon."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-adventure.jpg"
+				alt="The Adventure of Link: Link discovers that his is the holder of Courage Triforce and needs to awaken Zelda with six crystals."
+				onclick="modal(this)">
+		</div>
+
+	</div>
+
+	<div class="introTxtTime">
+		<h1>Here is the triumph timeline, that divides in 2.</h1>
+	</div>
+
+	<div class="introTxtTime">
+		<button onclick="displayTimeLine('grid-chronology-child')">Click here to display the Child Era Timeline</button>
+	</div>
+
+	<div id="grid-chronology-child" class="grid-container grid-chronology-child">
+		<div>
+			<img src="images/ch-majoras.jpg"
+				alt="Majora's Mask: After Ocarina of Time, link has to save Termina from the falling moon and the Skull Kid."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-twilight.jpg"
+				alt="Twilight Princess: Several centuries after Ocarina of Time, inheritors of Link and Zelda blood must save Hyrule and Twilight."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-fouradventures.jpg"
+				alt="Four Swords Adventure: Vaati seal is broken, and the new descendant of Link must find the Four Sword."
+				onclick="modal(this)">
+		</div>
+
+	</div>
+
+	<div class="introTxtTime">
+		<button onclick="displayTimeLine('grid-chronology-adult')">Click here to display the Adult Era Timeline</button>
+	</div>
+
+	<div id="grid-chronology-adult" class="grid-container grid-chronology-adult">
+		<div>
+			<img src="images/ch-wind.jpg"
+				alt="The Wind Waker: The new Link has to travel through the seas to find answers about the great flood that fell on Hyrule centuries ago."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-phantom.jpg"
+				alt="Phantom Hourglass: After Wind Waker, Link must find the spirits of Wisdom, Courage and Power to save the Zelda reencarnation of this time."
+				onclick="modal(this)">
+		</div>
+		<div>
+			<img src="images/ch-spirit.jpg"
+				alt="Spirit Tracks: Hundred years after Phantom Hourglass, we are presented to New Hyrule and the Tower of Spirits."
+				onclick="modal(this)">
+		</div>
+
+	</div>
+
+	<div class="introTxtTime">
+		<h1>Here is where the all timelines join together</h1>
+	</div>
+
+	<div class="introTxtTime">
+		<button onclick="displayTimeLine('grid-chronology-final')">Click here to display the final piece of all Timelines so
+			far</button>
+	</div>
+
+	<div id="grid-chronology-final" class="grid-container grid-chronology-final">
+		<div>
+			<img class="imageBreath" src="images/ch-breath.jpg"
+				alt="Breath of the Wild: What happened? Why Link has no memories? Who's Zelda and Why she's nowhere to be found?"
+				onclick="modal(this)">
+		</div>
+
+	</div>
+
+
+
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+		<!-- Modal content -->
+		<div class="modal-content">
+			<span class="close">&times;</span>
+			<div id="modalPreview"></div>
+		</div>
+
+	</div>
+
+
+	<footer>
+		<nav class="footer_menu">
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="chronology.html">Chronology</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="best-games.html">Best Games</a></li>
+				<span class="separator_footer">|</span>
+				<li><a href="contact.html">Contact Us</a></li>
+				<li>
+					<p id="actualYear"></p>
+				</li>
+
+
+			</ul>
+		</nav>
+	</footer>
+</body>
+
+</html>
